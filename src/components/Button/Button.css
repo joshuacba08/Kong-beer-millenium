@@ -1,0 +1,19 @@
+.button{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.button--primary{
+    background: #2f80ed;
+    color: #fff;
+}
+
+.button--secondary{
+    background: #fff;
+    color: #2f80ed;
+    border: 1px solid #2f80ed;
+}
