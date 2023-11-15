@@ -1,19 +1,47 @@
-.button{
-    border: none;
-    outline: none;
-    background: none;
-    padding: 9px 20px;
-    border-radius: 8px;
-    margin: 10px;
+button {
+  border: none;
+  background: none;
+  font-family: var(--mulish-font);
+  width: auto;
+  padding: 12px 16px;
+  line-height: 0.5rem;
 }
 
-.button--primary{
-    background: #2f80ed;
-    color: #fff;
+.button--primary {
+  background-color: var(--primary-color);
+  border: none;
+  font-family: var(--mulish-font);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 
-.button--secondary{
-    background: #fff;
-    color: #2f80ed;
-    border: 1px solid #2f80ed;
+.button--primary:hover {
+  transform: translate(-1px, -1px);
 }
+.button--primary:active {
+  transform: translate(1px, 1px);
+}
+
+.button--secondary {
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+  font-family: var(--mulish-font);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.button--secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--just-white);
+}
+
+.button--secondary[disabled]{
+    color: var(--border-color);
+    cursor: inherit;
+    background-color: transparent;
+}
+
