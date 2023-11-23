@@ -1,11 +1,9 @@
-// Objetivo: crear el contador de productos
-
 // importo el hook useState
 import { useState } from "react";
 import "./ItemCount.css";
 import Button from "../Button/Button";
 
-const ItemCount = ({initial, stock }) => {
+const ItemCount = ({initial, stock, onAdd }) => {
   // creo el estado count y la función setCount que va a modificar el estado
   const [count, setCount] = useState(initial);
 
@@ -36,6 +34,8 @@ const ItemCount = ({initial, stock }) => {
           disabled={count >= stock}
         />
       </div>
+
+      <Button onClick={onAdd} variant={'primary'} title={'Añadir al carrito'} />
     </div>
   );
 };

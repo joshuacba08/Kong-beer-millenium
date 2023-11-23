@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__image{
+    width: 320px;
+}
+
+.card__info{
+    text-align: center;
+}

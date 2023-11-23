@@ -1,12 +1,12 @@
 import './App.css'
-import ItemCount from './components/ItemCount/ItemCount';
+import { productList } from './assets/products';
+import ItemList from './components/ItemList/ItemList';
 
 function App() {
   
   return (
     <div>
-      <h1>Item Count</h1>
-      <ItemCount initial={1} stock={10} />
+      <ItemList products={productList}/>
     </div>
   )
 }
