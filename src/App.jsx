@@ -1,12 +1,13 @@
 import './App.css'
-import { productList } from './assets/products';
-import ItemList from './components/ItemList/ItemList';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   
   return (
     <div>
-      <ItemList products={productList}/>
+      <Navbar />
+      <ItemListContainer />
     </div>
   )
 }

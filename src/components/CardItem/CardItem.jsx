@@ -5,7 +5,7 @@ const CardItem = ({ product, onAdd }) => {
 
   return (
     <article className='card'>
-        <img className='card__image' src={product.thumbnail} alt="" />
+        <img className='card__image' src={product.image} alt="" />
         <div className='card__info'>
             <h3>{ product.name }</h3>
             <p>${product.price}</p>
